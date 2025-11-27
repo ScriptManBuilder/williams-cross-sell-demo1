@@ -35,10 +35,10 @@ const Footer: React.FC = () => {
           © {currentYear} Williams Revenue Recovery. All rights reserved.
         </Copyright>
         <FooterLinks>
-          <FooterLink href="#">Privacy Policy</FooterLink>
-          <FooterLink href="#">Terms of Service</FooterLink>
-          <FooterLink href="#">Cookie Policy</FooterLink>
-          <FooterLink href="#">Security</FooterLink>
+          <FooterLink href="/privacy-policy">Privacy Policy</FooterLink>
+          <FooterLink href="/terms-of-service">Terms of Service</FooterLink>
+          <FooterLink href="/cookie-policy">Cookie Policy</FooterLink>
+          <FooterLink href="/security">Security</FooterLink>
         </FooterLinks>
       </FooterBottom>
     </FooterContainer>
