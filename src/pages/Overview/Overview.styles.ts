@@ -1,5 +1,16 @@
 import styled from 'styled-components';
 
+export const PageHeader = styled.div`
+  margin-bottom: ${props => props.theme.spacing.xl};
+`;
+
+export const PageSubtitle = styled.p`
+  font-size: ${props => props.theme.typography.fontSize.base};
+  color: ${props => props.theme.colors.text.secondary};
+  margin-top: ${props => props.theme.spacing.sm};
+  line-height: 1.6;
+`;
+
 export const DashboardGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

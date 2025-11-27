@@ -2,6 +2,7 @@ import React from 'react';
 import { BarChart, Bar, LineChart, Line, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import Layout from '../../components/Layout/Layout';
 import { ChartTitle } from '../Overview/Overview.styles';
+import { PageHeader, PageSubtitle } from '../Overview/Overview.styles';
 import { AnalyticsGrid, FullWidthChart, StatsCard, StatsTitle, StatsList, StatItem, StatLabel, StatValue } from './Analytics.styles';
 import { 
   generateRecoveryByPaymentMethod, 
@@ -20,6 +21,11 @@ const Analytics: React.FC = () => {
 
   return (
     <Layout pageTitle="Recovery Analytics">
+      <PageHeader>
+        <PageSubtitle>
+          Deep dive into your recovery performance with detailed analytics across payment methods, time zones, and customer segments.
+        </PageSubtitle>
+      </PageHeader>
       <FullWidthChart>
         <ChartTitle>Recovery Success Rate by Time of Day</ChartTitle>
         <ResponsiveContainer width="100%" height={300}>

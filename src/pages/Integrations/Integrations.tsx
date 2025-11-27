@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Layout from '../../components/Layout/Layout';
 import Modal from '../../components/Modal/Modal';
 import { Button } from '../../components/Common/Common.styles';
+import { PageHeader, PageSubtitle } from '../Overview/Overview.styles';
 import {
   IntegrationsGrid,
   IntegrationCard,
@@ -123,6 +124,11 @@ const Integrations: React.FC = () => {
 
   return (
     <Layout pageTitle="Integrations">
+      <PageHeader>
+        <PageSubtitle>
+          Connect your eCommerce platforms and payment processors to enable automated payment recovery across all your systems.
+        </PageSubtitle>
+      </PageHeader>
       <IntegrationsGrid>
         {integrations.map(integration => (
           <IntegrationCard key={integration.id}>

@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import Layout from '../../components/Layout/Layout';
 import Modal from '../../components/Modal/Modal';
 import { Table, TableHead, TableRow, TableHeader, TableCell, StatusBadge, Button } from '../../components/Common/Common.styles';
+import { PageHeader, PageSubtitle } from '../Overview/Overview.styles';
 import { 
   PageContainer, 
   FiltersBar, 
@@ -66,6 +67,11 @@ const FailedPayments: React.FC = () => {
 
   return (
     <Layout pageTitle="Failed Payments">
+      <PageHeader>
+        <PageSubtitle>
+          Manage and retry failed payment transactions. Use filters to identify patterns and take action on specific payment issues.
+        </PageSubtitle>
+      </PageHeader>
       <PageContainer>
         <FiltersBar>
           <FilterGroup>

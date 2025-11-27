@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Layout from '../../components/Layout/Layout';
 import Modal from '../../components/Modal/Modal';
 import { Button } from '../../components/Common/Common.styles';
+import { PageHeader, PageSubtitle } from '../Overview/Overview.styles';
 import {
   SettingsContainer,
   SettingsSection,
@@ -82,6 +83,11 @@ const Settings: React.FC = () => {
 
   return (
     <Layout pageTitle="Retry Settings">
+      <PageHeader>
+        <PageSubtitle>
+          Configure your payment retry strategy to maximize recovery rates. Adjust timing, frequency, and notification preferences.
+        </PageSubtitle>
+      </PageHeader>
       <SettingsContainer>
         <SettingsSection>
           <SectionTitle>Smart Retry Logic</SectionTitle>

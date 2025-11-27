@@ -2,7 +2,7 @@ import React from 'react';
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import Layout from '../../components/Layout/Layout';
 import { MetricCardContainer, MetricHeader, MetricTitle, MetricIcon, MetricValue, MetricChange, Table, TableHead, TableRow, TableHeader, TableCell, StatusBadge } from '../../components/Common/Common.styles';
-import { DashboardGrid, ChartsGrid, ChartContainer, ChartTitle, TableContainer } from './Overview.styles';
+import { PageHeader, PageSubtitle, DashboardGrid, ChartsGrid, ChartContainer, ChartTitle, TableContainer } from './Overview.styles';
 import { 
   generateRecoveryChartData, 
   generateFailureReasonsData, 
@@ -47,6 +47,12 @@ const Overview: React.FC = () => {
 
   return (
     <Layout pageTitle="Overview Dashboard">
+      <PageHeader>
+        <PageSubtitle>
+          Monitor your payment recovery performance and track key metrics in real-time. 
+          Last updated: {new Date().toLocaleString('en-US', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' })}
+        </PageSubtitle>
+      </PageHeader>
       <DashboardGrid>
         {metrics.map((metric, index) => (
           <MetricCardContainer key={index}>

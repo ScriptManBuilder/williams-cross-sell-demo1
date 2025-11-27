@@ -1,6 +1,7 @@
 import React from 'react';
 import Sidebar from '../Sidebar/Sidebar';
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 import { LayoutContainer, MainContent, ContentArea } from './Layout.styles';
 
 interface LayoutProps {
@@ -17,6 +18,7 @@ const Layout: React.FC<LayoutProps> = ({ children, pageTitle }) => {
         <ContentArea>
           {children}
         </ContentArea>
+        <Footer />
       </MainContent>
     </LayoutContainer>
   );
